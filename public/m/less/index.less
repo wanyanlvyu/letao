@@ -1,0 +1,131 @@
+// 引入公共样式
+@import 'base.less';
+html, body{
+    height: 100%;
+}
+#wrapper{
+    height: 100%;
+    padding-top: 45px;
+    padding-bottom: 50px;
+    #list{
+        background-color: #fff;
+        /* 导航区域 */
+       #nav{
+           margin-top: 10px;
+           padding: 0 10px;
+           .mui-row{
+            >div{
+                >a{
+                    display: block;
+                    >img{
+                        width: 100%;
+                    }
+                }
+            }
+
+           }
+       }
+       /* 广告区域 */
+       #banner{
+           margin-top: 10px;
+           padding: 0 10px;
+           .mui-row{
+               >div{
+                // 左边
+                .mui-row{
+                    >a{
+                        display: block;
+                        overflow: hidden;
+                        >div{
+                            float: left;
+                            >img{
+                                width: 100%;
+                            }
+                        }
+
+                    }
+                }
+                // 右边
+                >a{
+                    display: block;
+                    >img{
+                        width: 100%;
+                    }
+                }
+ 
+               }
+           }
+
+       }
+       /* 品牌专区 */
+       #products{
+           padding: 10px;
+            /* 选中左右一area类名结尾的元素 [class$="area"]  */
+            [class$="area"]{
+                .title{
+                    display: block;
+                    margin-bottom: 10px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .brand-area{
+                .mui-row{
+                    margin-bottom: 10px;
+                    >div{
+                        >a{
+                            display: block;
+                            >img{
+                                width: 100%;
+                            }
+                        }
+                    } 
+                }
+            }
+            .sports-area,.woman-area,.man-area{
+                .mui-row{
+                    >div{
+                        padding: 0 5px;
+                        margin-bottom: 10px;
+                        .product{
+                            box-shadow: 0 0 1px #ccc;
+                            padding: 10px 0;
+                            .product-img{
+                                display: block;
+                                    >img{
+                                        width: 100%;
+                                    }
+                                }
+                                .product-name{
+                                    text-align: center;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    height: 36px;
+                                    overflow: hidden;
+                                    margin-bottom: 10px;
+                                }
+                                .product-price{
+                                    text-align: center;
+                                    font-size: 12px;
+                                    margin-bottom: 10px;
+                                    >span{
+                                        color: #f40;
+                                        margin-right: 10px;
+                                    }
+                                    >del{
+                                        color: #ccc;
+                                    }
+                                }
+                                .product-buy{
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+       }
+    }
+
+
